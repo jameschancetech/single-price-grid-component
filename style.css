@@ -1,33 +1,82 @@
+/* 
+
+### Layout
+- Mobile: 375px
+- Desktop: 1440px
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
 * {
-  border: 1px solid red;
-  margin: 0;
-  padding: 0;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
 }
 
 html, body {
-  height: 98%;
+  height: 99%;
+  background-color: hsl(204, 43%, 93%);
   
 }
 
-.container-fluid {
-  height: 98%;
-}
-.attribution { 
-  font-size: 11px; 
-  text-align: center; 
+#fullscreen {
+  height: 99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
-.attribution a { 
-  color: hsl(228, 45%, 44%); 
-}
-
-#mainBox {
-  width: 50%;
-  height: 100%;
+.wrapper {
+  min-height: 50%;
+  width: 60%;
   margin: 0 auto;
-  padding: 0 20px;
+  border-radius: 25%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+      "header header "
+      "left-side right-side"
+}
+
+#top {
+  padding: 20px;
+  grid-area: header;
+  background-color: white;
+  border-radius: 2.5% 2.5% 0 0;
+}
+
+
+
+
+#left{
+  padding: 20px;
+  grid-area: left-side;
+  background-color: hsl(179, 62%, 43%);
+  border-radius: 0 0 0 2.5%;
 }
 
 #right {
-  background-color: green;
+  padding: 20px;
+  grid-area: right-side;
+  background-color: hsl(218, 22%, 67%);
+  border-radius: 0 0 2.5% 0;
 }
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.attribution { font-size: 11px; text-align: center;}
+.attribution a { color: hsl(228, 45%, 44%);}
