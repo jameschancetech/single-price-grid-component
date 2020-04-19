@@ -1,7 +1,17 @@
 * {
-  margin: red;
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
 }
 
+html, body {
+  height: 98%;
+  
+}
+
+.container-fluid {
+  height: 98%;
+}
 .attribution { 
   font-size: 11px; 
   text-align: center; 
@@ -9,4 +19,15 @@
 
 .attribution a { 
   color: hsl(228, 45%, 44%); 
+}
+
+#mainBox {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#right {
+  background-color: green;
 }
