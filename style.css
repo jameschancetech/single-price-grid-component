@@ -50,14 +50,27 @@ html, body {
 }
 
 #top {
-  padding: 20px;
+  padding: 60px;
   grid-area: header;
   background-color: white;
   border-radius: 2.5% 2.5% 0 0;
 }
 
+h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 2rem;
+}
 
+#secondHeading {
+  color: hsl(71, 73%, 54%);
+  font-size: 1.5rem;
+}
 
+#thirdHeading {
+  color: hsl(218, 22%, 67%);
+  font-size: 1.3rem;
+  font-weight: 300;
+}
 
 #left{
   padding: 20px;
