@@ -4,52 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Single Price Grid Component</title>
 </head>
-<body>
-  <div id="fullscreen">
-    <div class="wrapper">
-      <div id="top">
-          <h1>Join our community</h1>
-          <h2 id="secondHeading">30-day, hassle-free money back guarantee</h2>
-          <h3 id="thirdHeading">
-            Gain access to our full library of tutorials along with expert code reviews. 
-            Perfect for any developers who are serious about honing their skills.
-          </h3>
-      </div>
-  
-      
-      <div id="left">
-        <h2 id="monthlySubHeading">Monthly Subscription</h2>
-      
-        <p id="monthlySub"><span id="dollarSign">&dollar;29</span> per month</p>
-      
-        <h3 id="fullAccess">Full access for less than &dollar;1 a day</h3>
-      
-        <button>Sign Up</button>
-      </div>
-  
-      <div id="right" >
-        <h2 id="whyUs">Why Us</h2>
-        <ul>
-          <li >Tutorials by industry experts</li>
-          <li>Peer &amp; expert code review</li>
-          <li>Coding exercises</li>
-          <li>Access to our GitHub repos</li>
-          <li>Community forum</li>
-          <li>Flashcard decks</li>
-          <li>New videos every week</li>
-        </ul>
-      </div>
-        
+<div class="container">
+
+  <div class="row">
+    <div id="top" class="col-xs-12">
+      <h1>Join our community</h1>
+      <h2 id="secondHeading">30-day, hassle-free money back guarantee</h2>
+      <h3 id="thirdHeading">
+        Gain access to our full library of tutorials along with expert code reviews. 
+        Perfect for any developers who are serious about honing their skills.
+      </h3>
     </div>
   </div>
+
+
+  <div class="row">
+    <div id="left" class="col-xs-12 col-md-6">
+      <h2 id="monthlySubHeading">Monthly Subscription</h2>
+    
+      <p id="monthlySub"><span id="dollarSign">&dollar;29</span> per month</p>
+    
+      <h3 id="fullAccess">Full access for less than &dollar;1 a day</h3>
+    
+      <button>Sign Up</button>
+    </div>
+  
+  
+  
+    <div id="right" class="col-xs-12 col-md-6">
+      <h2 id="whyUs">Why Us</h2>
+      <ul>
+        <li >Tutorials by industry experts</li>
+        <li>Peer &amp; expert code review</li>
+        <li>Coding exercises</li>
+        <li>Access to our GitHub repos</li>
+        <li>Community forum</li>
+        <li>Flashcard decks</li>
+        <li>New videos every week</li>
+      </ul>
+    </div>
+  </div>
+
+
+</div>
+
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://twitter.com/jameschancetech">James Chance</a>.
     </p>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

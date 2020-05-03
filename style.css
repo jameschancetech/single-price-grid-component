@@ -1,25 +1,3 @@
-/* 
-
-### Layout
-- Mobile: 375px
-- Desktop: 1440px
-
-### Primary
-
-- Cyan: hsl(179, 62%, 43%)
-- Bright Yellow: hsl(71, 73%, 54%)
-
-#BFDF32
-
-### Neutral
-
-- Light Gray: hsl(204, 43%, 93%)
-- Grayish Blue: hsl(218, 22%, 67%)
-
-
-#2BB3B1
-
-*/
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
 * {
@@ -29,60 +7,46 @@
 }
 
 html, body {
-  height: 99%;
   background-color: hsl(204, 43%, 93%);
-  
+  margin: 0;
+  border: 0;
 }
 
-#fullscreen {
-  height: 99%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-}
-
-.wrapper {
-  min-height: 50%;
+.container {
+  margin-top: 50px;
   width: 50%;
-  margin: 0 auto;
-  border-radius: 25%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas:
-      "header header "
-      "left-side right-side"
 }
+
+/* *** TOP SECTION  *** */
 
 #top {
   padding:  40px 60px;
-  grid-area: header;
   background-color: white;
   border-radius: 2.5% 2.5% 0 0;
 }
 
 h1 {
   color: hsl(179, 62%, 43%);
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 
 #secondHeading {
   color: hsl(71, 73%, 54%);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
 #thirdHeading {
   color: hsl(218, 22%, 67%);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
+/* *** LEFT SECTION  *** */
+
 #left{
   padding: 40px;
-  grid-area: left-side;
   background-color: hsl(179, 62%, 43%); 
   border-radius: 0 0 0 2.5%;
 }
@@ -91,21 +55,26 @@ h1 {
   color: white;
   font-weight: 700;
   font-size: 1.2rem;
+  
 }
 
 #monthlySub {
   color: #84E6E9;
   font-weight: 100;
+  margin-top: 20px;
 }
 
 #dollarSign {
   font-size: 2rem;
   padding-right: 5px;
   color: white;
+  margin-top: 10px;
 }
 
 #fullAccess {
   color: white;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 button {
@@ -118,9 +87,10 @@ button {
   margin-top: 5%;
 }
 
+/* *** RIGHT SECTION  *** */
+
 #right {
   padding: 20px;
-  grid-area: right-side;
   background-color: #4ABEBD;
   border-radius: 0 0 2.5% 0;
   padding: 40px;
@@ -145,13 +115,62 @@ li {
 }
 
 .attribution { font-size: 11px; text-align: center;}
-.attribution a { color: hsl(228, 45%, 44%);}
+.attribution a { color: hsl(228, 45%, 44%); font-size: 11px;}
 
 
 
-/* MEDIA QUERIES */
-
-
-
-
+/* *** MEDIA QUERIES *** */
 /* - Mobile: 375px */
+
+@media only screen and (max-width: 720px) {
+
+  body {
+    margin: 40px 20px 20px 20px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #top, #left, #right {
+    border-radius: 0;
+    padding: 30px;
+  }
+
+  /* *** TOP SECTION  *** */
+
+  #top {
+    border-radius: 2.5% 2.5% 0 0;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  #secondHeading {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  #thirdHeading {
+    font-size: 0.8rem;
+    line-height: 200%;
+    margin-top: 20px;
+  }
+
+  /* *** LEFT SECTION  *** */
+
+  #fullAccess {
+    font-size: 1rem;
+  }
+
+  #dollarSign {
+    margin-top: 10px;
+  }
+
+  /* *** RIGHT SECTION  *** */
+
+  #right {
+    border-radius: 0 0 2.5% 2.5%;
+  }
+}
