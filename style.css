@@ -9,10 +9,15 @@
 - Cyan: hsl(179, 62%, 43%)
 - Bright Yellow: hsl(71, 73%, 54%)
 
+#BFDF32
+
 ### Neutral
 
 - Light Gray: hsl(204, 43%, 93%)
 - Grayish Blue: hsl(218, 22%, 67%)
+
+
+#2BB3B1
 
 */
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
@@ -20,6 +25,7 @@
 * {
   font-family: 'Karla', sans-serif;
   font-size: 16px;
+  font-weight: 400;
 }
 
 html, body {
@@ -38,7 +44,7 @@ html, body {
 
 .wrapper {
   min-height: 50%;
-  width: 60%;
+  width: 55%;
   margin: 0 auto;
   border-radius: 25%;
   display: grid;
@@ -50,7 +56,7 @@ html, body {
 }
 
 #top {
-  padding: 60px;
+  padding:  40px 60px;
   grid-area: header;
   background-color: white;
   border-radius: 2.5% 2.5% 0 0;
@@ -59,36 +65,59 @@ html, body {
 h1 {
   color: hsl(179, 62%, 43%);
   font-size: 2rem;
+  font-weight: 700;
 }
 
 #secondHeading {
   color: hsl(71, 73%, 54%);
   font-size: 1.5rem;
+  font-weight: 700;
 }
 
 #thirdHeading {
   color: hsl(218, 22%, 67%);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 300;
 }
 
 #left{
   padding: 20px;
   grid-area: left-side;
-  background-color: hsl(179, 62%, 43%);
+  background-color: hsl(179, 62%, 43%); 
   border-radius: 0 0 0 2.5%;
 }
+
+#monthlySubHeading {
+  color: white;
+}
+
+#monthlySub {
+  color: white;
+}
+
 
 #right {
   padding: 20px;
   grid-area: right-side;
-  background-color: hsl(218, 22%, 67%);
+  background-color: #4ABEBD;
   border-radius: 0 0 2.5% 0;
+}
+
+#whyUs {
+  color: white;
+  font-weight: 700;
 }
 
 ul {
   list-style: none;
   padding-left: 0px;
+  color: white;
+}
+
+li {
+  margin-top: 4px;
+  font-weight: 400;
+  font-size: 0.8rem;
 }
 
 .attribution { font-size: 11px; text-align: center;}
